@@ -307,6 +307,8 @@ public:
     double playOnce(double speed);
     
     void setPosition(double newPos); // between 0.0 and 1.0
+
+    const double getPosition();
     
     double playUntil(double end);
     

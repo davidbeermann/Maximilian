@@ -664,6 +664,10 @@ void maxiSample::setPosition(double newPos) {
     position = maxiMap::clamp<double>(newPos, 0.0, 1.0) * length;
 }
 
+const double maxiSample::getPosition() {
+    return position;
+}
+
 //start end and points are between 0 and 1
 double maxiSample::playLoop(double start, double end) {
     position++;
